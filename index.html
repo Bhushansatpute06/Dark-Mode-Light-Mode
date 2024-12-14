@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge" />
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0" />
+    <title>
+        Dark Mode for Websites using HTML CSS & JavaScript
+      </title>
+    <style>
+        body {
+            padding: 25px;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Light Mode / Dark Mode</h1>
+
+    <p>
+        Dark Mode Websites using Html CSS &
+        Javascript
+    </p>
+
+    <img src=
+"https://files.oaiusercontent.com/file-7k9wLxV2UBwq8H7tycyYFX?se=2024-12-14T08%3A17%3A59Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D1cb8b3b0-1dfb-445a-9593-5fb36f509b54.webp&sig=L92hqPJE2V0RwAxn8aarArkquJkVXWnvI8BL6cR23Vo%3D" />
+
+    <h3 id="DarkModetext">Dark Mode is OFF</h3>
+    <button onclick="darkMode()">Darkmode</button>
+    <button onclick="lightMode()">LightMode</button>
+    <script>
+        function darkMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "dark-mode";
+            content.innerText = "Dark Mode is ON";
+        }
+        function lightMode() {
+            let element = document.body;
+            let content = document.getElementById("DarkModetext");
+            element.className = "light-mode";
+            content.innerText = "Dark Mode is OFF";
+        }
+    </script>
+</body>
+</html>
